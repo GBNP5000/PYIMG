@@ -1,0 +1,23 @@
+import cv2
+
+print ("Read image with opencv")
+img = cv2.imread("D:/PYTHONS/IMAGE/T1.png")
+
+print ("Convert to gray")
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+print ("Write gray image")
+cv2.imwrite("D:/PYTHONS/IMAGE/Gray.png", img)
+
+print ("------ Done -------")
+
+
+PROGRAM ERROR :
+
+
+Traceback (most recent call last):
+  File "D:\PYTHONS\IMAGE\IMGOCR.py", line 1, in <module>
+    import cv2
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\site-packages\cv2\__init__.py", line 3, in <module>
+    from .cv2 import *
+ImportError: DLL load failed: The specified module could not be found.
